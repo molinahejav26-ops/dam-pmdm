@@ -1,0 +1,40 @@
+<div class="container mt-5">
+  <h3>CustomProgressBarComponent</h3>
+
+  <div class="row">
+    <div class="col-md-4">
+      <app-custom-progress-bar
+        [value]="25"
+        [color]="'primary'"
+        [showText]="true">
+      </app-custom-progress-bar>
+    </div>
+    <div class="col-md-4">
+      <app-custom-progress-bar
+        [value]="50"
+        [color]="'success'"
+        [striped]="true"
+        [showText]="true">
+      </app-custom-progress-bar>
+    </div>
+    <div class="col-md-4">
+      <app-custom-progress-bar
+        [value]="75"
+        [color]="'warning'"
+        [striped]="true"
+        [animated]="true"
+        [showText]="true">
+      </app-custom-progress-bar>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-md-4">
+      <app-custom-progress-bar
+        [value]="100"
+        [color]="'danger'"
+        [showText]="true">
+      </app-custom-progress-bar>
+    </div>
+  </div>
+</div>

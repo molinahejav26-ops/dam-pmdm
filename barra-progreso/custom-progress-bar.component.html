@@ -1,0 +1,20 @@
+<div class="progress mb-3" role="progressbar" [attr.aria-valuenow]="value" aria-valuemin="0" aria-valuemax="100">
+  <div
+    class="progress-bar"
+    [class.bg-success]="color === 'success'"
+    [class.bg-info]="color === 'info'"
+    [class.bg-warning]="color === 'warning'"
+    [class.bg-danger]="color === 'danger'"
+    [class.bg-primary]="color === 'primary'"
+    [class.bg-secondary]="color === 'secondary'"
+    [class.bg-dark]="color === 'dark'"
+    [class.bg-light]="color === 'light'"
+    [class.progress-bar-striped]="striped"
+    [class.progress-bar-animated]="animated"
+    [style.width.%]="value"
+  >
+    @if (showText) {
+      {{ value }}%
+    }
+  </div>
+</div>
