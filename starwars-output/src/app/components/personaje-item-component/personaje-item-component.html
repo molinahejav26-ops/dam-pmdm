@@ -1,0 +1,8 @@
+<section class="card h-100">
+    <div class="card-body">
+        <h4 class="card-title">{{ personaje().name }}</h4>
+        <p class="card-text mb-1"><strong>Género:</strong> {{ personaje().gender }}</p>
+        <p class="card-text"><strong>Especie:</strong> {{ personaje().species }}</p>
+        <button type="button" class="btn btn-primary" (click)="emitPersonajeClicked()">Ver detalles</button>
+    </div>
+</section>

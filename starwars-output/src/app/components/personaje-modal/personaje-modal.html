@@ -1,0 +1,20 @@
+<div class="modal-header">
+    <h4 class="modal-title">{{ personajeDetail?.name }}</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss()"></button>
+</div>
+<div class="modal-body text-center">
+    <p><strong>Nombre:</strong> {{ personajeDetail?.name }}</p>
+    <p><strong>Especie:</strong> {{ personajeDetail?.species.length }}</p>
+    <p><strong>Género:</strong> {{ personajeDetail?.gender }}</p>
+    <p><strong>Vehículos:</strong> {{ personajeDetail?.vehicles.length }}</p>
+    <p><strong>Peliculas:</strong> {{ personajeDetail?.films.length }}</p>
+    <!--<p><strong>Peliculas:</strong>
+        @for(film of personajeDetail?.films; track film) {
+            <span>{{ film }}, </span>
+        }
+    </p>-->
+    
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-outline-secondary" (click)="activeModal.close()">Cerrar</button>
+</div>
