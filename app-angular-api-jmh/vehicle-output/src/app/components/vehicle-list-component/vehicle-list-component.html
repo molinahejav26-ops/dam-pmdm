@@ -1,0 +1,12 @@
+
+<main class="container py-4">
+    <h1 class="text-center mb-4">Vehiculos de Star Wars</h1>
+    <div class="row g-4">
+        @for (v of vehicleList(); track v.id) {
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <app-vehicle-item-component [vehicle]="v"
+                (vehicleClicked)="openVehicleModal($event)"></app-vehicle-item-component>
+        </div>
+        }
+    </div>
+</main>

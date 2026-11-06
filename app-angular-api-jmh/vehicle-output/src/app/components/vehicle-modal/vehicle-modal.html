@@ -1,0 +1,17 @@
+<div class="modal-header">
+    <h4 class="modal-title">{{ vehicleDetail?.name }}</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss()"></button>
+</div>
+<div class="modal-body text-center">
+    <p><strong>Nombre:</strong> {{ vehicleDetail?.name }}</p>
+    <p><strong>Modelo:</strong> {{ vehicleDetail?.model }}</p>
+    <p><strong>Fabricante:</strong> {{ vehicleDetail?.manufacturer }}</p>
+    <p><strong>Costo:</strong> {{ vehicleDetail?.cost_in_credits }} €</p>
+    <p><strong>Longitud:</strong> {{ vehicleDetail?.length }} M</p>
+    <p><strong>Tripulantes:</strong> {{ vehicleDetail?.crew }}</p>
+    <p><strong>Pasajeros:</strong> {{ vehicleDetail?.passengers }}</p>
+    <p><strong>Capacidad:</strong> {{ vehicleDetail?.cargo_capacity }}</p>
+    <p><strong>Combustible:</strong> {{ vehicleDetail?.consumables }}</p>
+    <p><strong>Clase Vehiculo:</strong> {{ vehicleDetail?.vehicle_class }}</p>
+
+</div>
